@@ -1,0 +1,153 @@
+<html>
+<!--This was one of the projects that I had to build for FreeCodeCamp's Responsive Web Design Certification-->
+<style>
+html {
+  text-align: justify left;
+  font-family: monospace, sans-serif;
+  background-color: #c8d6e5;
+
+  border-radius: 20px;
+  margin: auto;
+  width: 50%;
+  color: #222f3e;
+  background-color: #222f3e;
+  background-size:     cover;
+  background-position: center center;
+}
+.button {
+  border-radius: 20px;
+}
+.input {
+  border-radius: 20px;
+}
+body {
+  border-radius: 20px;
+  margin: auto;
+  width: 80%;
+  background-color: #8395a7;
+  padding: 10px;
+  opacity: 0.9;
+}
+#title {
+  text-align: center;
+}
+#textArea {
+  width: 100%;
+}
+
+</style>
+
+
+<div>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Let us know how we can improve freeCodeCamp</p>
+<form id="survey-form" required>
+  <form action="/action_page.php"  id="survey-form" name = "firstandlast" required>
+
+  * Name: <input type="text" class = "input" name="fname" placeholder="Enter your name" required id="name"  id="name-label" required><br>
+
+  * Email: <input type="email" class = "input" name="lname" placeholder="Enter your Email" required id="email" id="email-label" required><br>
+
+  * Age: <input type="number" class = "input" name="lname" min = "1" max = "125" placeholder="Age" id="number"  id="number-label" required><br>
+  
+</div>
+<form>
+<div id="dropdown"> Which option best describes your current role?
+  <select class = "input">
+
+  <option value="Student" disabled>Select One</option>
+  <option value="Student">Student</option>
+  <option value="Full Time Job">Full Time Student</option>
+  <option value="Full Time Learner">Full Time Learner</option>
+  <option value="Prefer not to say">Prefer not to say</option>
+  <option value="Other">Other</option>
+
+</select>
+</div>
+<form name="myWebForm" action="mailto:youremail@email.com" method="post">
+  <p>* How likely is that you would recommend <br> freeCodeCamp to a friend?</p>
+
+<input type="radio" name="Definitely" />Definitely<br />
+<input type="radio" name="Maybe" />Maybe<br />
+<input type="radio" name="Not sure" />Not sure<br />
+
+</div>
+
+<p>Things that should be improved in the future
+(Check all that apply):
+
+<label class="container"> 
+  <br> 
+  <input type="checkbox" value="1">
+  <span class="checkmark">Front-end Projects</span>
+</label>
+<br>
+<label class="container">
+  <input type="checkbox" value="1">
+  <span class="checkmark">Back-end Projects</span>
+  </label>
+<br>
+<label class="container">
+  <input type="checkbox" value="1">
+  <span class="checkmark">Data Visualization</span>
+  </label>
+<br>
+<label class="container">
+  <input type="checkbox" value="1">
+  <span class="checkmark">Challenges</span>
+  </label>
+<br>
+<label class="container">
+  <input type="checkbox" value="1">
+  <span class="checkmark">Open Source Community</span>
+  </label>
+<br>
+<label class="container">
+  <input type="checkbox" value="1">
+  <span class="checkmark">Gitter help rooms</span>
+  </label>
+<br>
+<label class="container">
+  <input type="checkbox" value="1">
+  <span class="checkmark">Videos</span>
+  </label>
+<br>
+<label class="container">
+  <input type="checkbox" value="1">
+  <span class="checkmark">City Meetups</span>
+  </label>
+<br>
+<label class="container">
+  <input type="checkbox" value="1">
+  <span class="checkmark">Wiki</span>
+  </label>
+<br>
+<label class="container">
+  <input type="checkbox" value="1">
+  <span class="checkmark">Forum</span>
+  </label>
+<br>
+<label class="container">
+  <input type="checkbox" value="1">
+  <span class="checkmark">Additional Courses</span>
+  </label>
+<br>
+</p>
+<p>Any Comments or Suggestions?</p>
+</div>
+<textarea id = "textarea" name="comment" form="userform" placeholder="Enter your comment here..."></textarea>
+<form action="/action_page.php" id="userform">
+<br>
+
+<button class = "button" id = "submit" type = "submit">Submit</button>
+<button class = "button" id = "reset">Clear</button>
+</div>
+</form>
+<script>
+
+function clear() {
+   document.getElementById("reset").reset();
+}
+
+</script>
+</html>
